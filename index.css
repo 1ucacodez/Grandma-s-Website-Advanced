@@ -18,18 +18,6 @@ html, body {
     height:100%;
     width: 100%;
 }
-.nav-tittle {
-    background-size: 75px;
-    display: flex;
-    color: white;
-    font-family: 'Geologica', sans-serif;
-    font-size: 70px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-
 
 .page-wrapper {
     grid-template-areas: 
@@ -40,19 +28,34 @@ html, body {
 
 }
 
+.nav-tittle {
+    background-size: 75px;
+    display: flex;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rose);
+    grid-area: nt;
+    height:300px;
+}
+
+
+
 @media (max-width: 1000px) {
     .page-wrapper {
-        display:flex;
-        flex-direction: column;
+        grid-template-areas: 
+        'nt nt nt nt'
+        'mw mw mw mw'
+        'mw2 mw2 mw2 mw2'
+        'bl bm br br';
+        display:grid;
     }
 }
 
-.page-wrapper > .nav-tittle {
-    height: 300px;
-}
-.page-wrapper > .middle-wrapper {
-    height: 400px;
-}
+
 .page-wrapper > .bottom-middle {
     height: 300px;
 }
@@ -68,6 +71,8 @@ html, body {
     color: white;
     grid-area: mw;
 
+    height:200px;
+
 }
 .middle-wrapper2 {
     background-image: url(./Experience.png);
@@ -77,6 +82,7 @@ html, body {
     background-color: rgb(133, 71, 133);
     grid-area: mw2;
     position: relative;
+    height:200px;
 }
 .bottom-left {
     background-color: yellow;
@@ -93,7 +99,7 @@ html, body {
 
 .women {
     height: auto;
-    width: 750px;
+    width: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
