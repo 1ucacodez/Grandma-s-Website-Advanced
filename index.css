@@ -1,0 +1,84 @@
+:root {
+    --purple:  #4F1BBF; 
+    --cyan:#4ACAD9;
+    --pinkish:#D91ACC;
+    --pink:#F294D9;
+    --rose:#7950d1;
+
+    
+}
+
+* {
+    padding:0;
+    margin:0;
+    text-decoration: none;
+}
+html, body {
+    height:100%;
+    width: 100%;
+}
+a  {
+    color: white;
+    font-size: 25px;
+    font-family: 'Geologica', sans-serif;
+}
+
+
+
+.page-wrapper {
+    grid-template-areas: 
+    'nt nt nt nt'
+    'mw mw mw2 mw2'
+    'bl bm br br';
+    display:grid;
+
+}
+
+@media (max-width: 1000px) {
+    .page-wrapper {
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+.page-wrapper > .nav-tittle {
+    height: 300px;
+}
+.page-wrapper > .middle-wrapper {
+    height: 400px;
+}
+.page-wrapper > .bottom-middle {
+    height: 300px;
+}
+.nav-tittle {
+    background-color: var(--rose);
+    grid-area: nt;
+}
+.middle-wrapper {
+    background-color: green;
+    grid-area: mw;
+
+}
+.middle-wrapper2 {
+    background-color: blue;
+    grid-area: mw2;
+}
+.bottom-left {
+    background-color: yellow;
+    grid-area: bl;
+}
+.bottom-middle {
+    background-color: purple;
+    grid-area: bm;
+}
+.bottom-right {
+    background-color: black;
+    grid-area: br;
+}
+
+
+.main-navbar {
+    display:flex;
+    gap: 20px;
+    align-items: center;
+}
