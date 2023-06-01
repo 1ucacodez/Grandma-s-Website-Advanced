@@ -68,10 +68,19 @@ html, body {
 
 }
 .middle-wrapper2 {
+    background-image: url(./Experience.png);
+    background-size: 190px;
+    background-blend-mode: overlay;
     background-position: center;
     background-color: rgb(133, 71, 133);
     grid-area: mw2;
     position: relative;
+    animation: experience 5s infinite;
+}
+@keyframes experience {
+    50% {
+        background-size: 200px;
+    }
 }
 .bottom-left {
     background-color: yellow;
