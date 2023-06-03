@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 html, body {
-    height:100%;
+    min-height:100%;
     width: 100%;
 }
 
@@ -25,7 +25,8 @@ html, body {
     'mw mw mw2 mw2'
     'bl bm br br';
     display:grid;
-
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-rows: minmax(300px, auto);
 }
 
 .nav-tittle {
@@ -64,15 +65,15 @@ html, body {
     grid-area: nt;
 }
 .middle-wrapper {
-    position: relative;
-    background-color: violet;
+    font-size: 25px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: violet;
     font-family: 'Geologica', sans-serif;
     color: white;
     grid-area: mw;
-
-    height:200px;
-
 }
 .middle-wrapper2 {
     background-image: url(./Experience.png);
@@ -82,19 +83,35 @@ html, body {
     background-color: rgb(133, 71, 133);
     grid-area: mw2;
     position: relative;
-    height:200px;
+    height:300px;
 }
 .bottom-left {
-    background-color: yellow;
+    background-image: url(./green-shirt.png);
+    background-size: 200px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: plum;
     grid-area: bl;
 }
 .bottom-middle {
-    background-color: purple;
+    background-image: url(./white-shirt.png);
+    background-size: 250px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: palevioletred;
     grid-area: bm;
 }
 .bottom-right {
-    background-color: black;
+    background-color: var(--pink);
     grid-area: br;
+    height: 100%;
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .women {
@@ -105,10 +122,11 @@ html, body {
     bottom: 0;
 }
 
-.grey-line {
-    width: 100%;
-    background-color: grey;
-    height: 20px;
-    position: absolute;
-    top:45%;
+.spacer {
+    width:50vw;
+    height:auto;
+}
+.btm-spacer {
+    width:20vw;
+    height:auto;
 }
