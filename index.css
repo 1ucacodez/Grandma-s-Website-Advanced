@@ -70,7 +70,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: violet;
+    background-image:linear-gradient(to bottom right,violet, rgb(255, 0, 119));
     font-family: 'Geologica', sans-serif;
     color: white;
     grid-area: mw;
@@ -102,7 +102,7 @@ html, body {
     grid-area: bm;
 }
 .bottom-right {
-    background-color: var(--pink);
+    background-image:linear-gradient(to bottom right, rgb(255, 0, 119), violet) ;
     grid-area: br;
     height: 100%;
     font-family: 'Geologica', sans-serif;
