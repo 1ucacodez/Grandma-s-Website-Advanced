@@ -17,6 +17,16 @@
             <a href="./index.html">Home</a>
             <a href="./about.html">About</a>
         </nav>
+
+        <div class="mobile-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-open">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+                            
+        </div>
         <h1>MIHAELA'S BLING <br> BOUTIQUE</h1>
     </div>
 
@@ -39,5 +49,15 @@
         <div class="bottom-right"><div class="bottom-space">Our boutique offers an extensive range of clothing items, from trendy t-shirts and tank tops to cozy hoodies and hats, all of which can be customized with our impressive selection of vinyl designs, embroidery, and other customization options. We believe that fashion should be an expression of who you are, and our custom designs allow you to make a statement that is uniquely yours.
             In addition to our apparel, we also offer a captivating array of accessories that are designed to make you stand out from the crowd.</div></div>
     </div>
+
+    <script>
+        const nav = document.querySelector('.nav-bar');
+        const toggle = document.querySelector('.mobile-toggle');
+
+        toggle.addEventListener('click', (e) => {
+            nav.classList.toggle('open');
+           toggle.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
