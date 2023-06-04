@@ -17,6 +17,7 @@
 html, body {
     min-height:100%;
     width: 100%;
+    overscroll-behavior: none;
 }
 
 .page-wrapper {
@@ -48,7 +49,6 @@ html, body {
     color: white;
     padding: 20px;
     font-family: 'Geologica', sans-serif;
-
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -56,9 +56,10 @@ html, body {
     grid-area: nt;
     height:300px;
 }
-.nav-title h1 {
-    font-size: 50px;
+h1 {
+    font-size: 100px;
 }
+
 .mobile-toggle {
     position:absolute;
     top:20px;
@@ -73,7 +74,6 @@ html, body {
     border-radius:50%;
     display:none;
 }
-
 .mobile-toggle svg {
     width:30px;
     height:auto;
@@ -97,7 +97,6 @@ html, body {
         position:fixed;
         height:100%;
         background-color: rgba(255, 192, 203, 0.652);
-
         width:50vw;
         border-radius: 0;
         top:0;
@@ -200,4 +199,35 @@ html, body {
 .btm-spacer {
     width:20vw;
     height:300px;
+}
+.clothings {
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    flex-wrap:wrap;
+    gap: 20px;
+}
+.clothings img {
+    width: 400px;
+    border: 4px var(--purple) solid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    border: 5px var(--purple) solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+.about-txt {
+    border: 5px var(--purple) solid;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Geologica', sans-serif;
+    text-align: center;
+    font-size: 30px;
 }

@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="page-wrapper">
+        <div class="nav-tittle">
+        <nav class="nav-bar">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+        </nav>
+
+        <div class="mobile-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-open">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+                            
+        </div>
+        <h1>MIHAELA'S BLING <br> BOUTIQUE</h1>
+    </div>
+
+        <div class="middle-wrapper">
+            <p>Welcome to Mihaela's Bling Boutique! We are your premier destination for stylish clothing, accessories, vinyl signs, and custom designs that add a touch of sparkle and individuality to your life.
+                At Mihaela's Bling Boutique, we specialize in bringing your creative visions to life through our custom work. Whether you're looking for personalized apparel, eye-catching vinyl signs, or unique accessories, our dedicated team is here to provide you with high-quality products that reflect your unique style and personality.</p>
+            
+            </div>
+
+        <div class="middle-wrapper2">
+            <img src="./women.png" alt="" class="women">
+            <div class="spacer"></div>
+        </div>
+        <div class="bottom-left">
+            <div class="btm-spacer"></div>
+        </div>
+        <div class="bottom-middle">
+            <div class="btm-spacer"></div>
+        </div>
+        <div class="bottom-right"><div class="bottom-space">Our boutique offers an extensive range of clothing items, from trendy t-shirts and tank tops to cozy hoodies and hats, all of which can be customized with our impressive selection of vinyl designs, embroidery, and other customization options. We believe that fashion should be an expression of who you are, and our custom designs allow you to make a statement that is uniquely yours.
+            In addition to our apparel, we also offer a captivating array of accessories that are designed to make you stand out from the crowd.</div></div>
+    </div>
+    <h2>ABOUT</h2>
+    <p class="about-txt">Welcome to Mihaela's Bling Boutique! We are your premier destination for stylish clothing, accessories, vinyl signs, and custom designs that add a touch of sparkle and individuality to your life.
+
+        At Mihaela's Bling Boutique, we specialize in bringing your creative visions to life through our custom work. Whether you're looking for personalized apparel, eye-catching vinyl signs, or unique accessories, our dedicated team is here to provide you with high-quality products that reflect your unique style and personality.
+        
+        Our boutique offers an extensive range of clothing items, from trendy t-shirts and tank tops to cozy hoodies and hats, all of which can be customized with our impressive selection of vinyl designs, embroidery, and other customization options. We believe that fashion should be an expression of who you are, and our custom designs allow you to make a statement that is uniquely yours.
+        
+        In addition to our apparel, we also offer a captivating array of accessories that are designed to make you stand out from the crowd. From dazzling phone cases and keychains to glittery wall signs and banners, our accessories are perfect for adding that extra touch of bling to your everyday life.
+        
+        What sets us apart at Mihaela's Bling Boutique is our commitment to exceptional craftsmanship and attention to detail. Our skilled designers and artisans work tirelessly to ensure that every custom piece we create is of the highest quality, using top-of-the-line materials and techniques to bring your visions to life.
+        
+        We invite you to explore our online store and discover the limitless possibilities of self-expression and personalization. Whether you're searching for a unique gift or treating yourself to something special, Mihaela's Bling Boutique is here to provide you with extraordinary products that truly shine.
+        
+        Thank you for choosing Mihaela's Bling Boutique, where we believe that every individual deserves to sparkle and radiate their unique style to the world.</p>
+
+<script>
+    const nav = document.querySelector('.nav-bar');
+    const toggle = document.querySelector('.mobile-toggle');
+
+    toggle.addEventListener('click', (e) => {
+        nav.classList.toggle('open');
+        toggle.classList.toggle('active');
+     })
+</script>
 </body>
 </html>
